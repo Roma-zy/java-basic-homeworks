@@ -1,4 +1,4 @@
-package ru.RomanYuzyuk.java.basic.homeworks.homeWorkLesson3;
+package ru.roman.yuzyuk.java.basic.homeworks.homeWorkLesson3;
 
 import java.util.Scanner;
 
