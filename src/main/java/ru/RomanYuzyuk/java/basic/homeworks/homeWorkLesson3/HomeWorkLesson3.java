@@ -1,6 +1,5 @@
 package ru.RomanYuzyuk.java.basic.homeworks.homeWorkLesson3;
 
-import java.util.List;
 import java.util.Scanner;
 
 public class HomeWorkLesson3 {
@@ -9,10 +8,7 @@ public class HomeWorkLesson3 {
     }
 
     public static void greetings() {
-        String[] array = new String[] {"Hello", "World", "from", "Java"};
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
-        }
+        System.out.println("Hello\nWorld\nfrom\nJava");
     }
 
     public static void checkSign(int a, int b, int c) {
