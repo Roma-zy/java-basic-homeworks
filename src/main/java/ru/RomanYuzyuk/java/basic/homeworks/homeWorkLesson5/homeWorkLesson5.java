@@ -1,6 +1,5 @@
 package ru.RomanYuzyuk.java.basic.homeworks.homeWorkLesson5;
 
-import java.util.Arrays;
 import java.util.Objects;
 
 public class homeWorkLesson5 {
