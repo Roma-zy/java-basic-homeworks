@@ -126,11 +126,11 @@ public class HomeWorkLesson5 {
         return true;
     }
 
-    public static int[] arrayReverse(int[] array) {
-        int[] result = new int[array.length];
-        for (int i = 0; i < array.length; i++) {
-            result[array.length - i - 1] = array[i];
+    public static void arrayReverse(int[] array) {
+        for (int i = 0; i < array.length / 2; i++) {
+            int value = array[i];
+            array[i] = array[array.length - 1 - i];
+            array[array.length - 1 - i] = value;
         }
-        return result;
     }
 }
