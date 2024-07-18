@@ -107,17 +107,12 @@ public class HomeWorkLesson5 {
             System.out.println("Не верно передано направление сортировки");
             return false;
         }
-
-        boolean isCorrect = true;
         for (int i = 0; i < array.length - 1; i++) {
-            isCorrect = Objects.equals(direction, "ASC") ? array[i] <= array[i + 1] : array[i] > array[i + 1];
-
-            if(!isCorrect) {
-                break;
+            if (direction.equals("ASC") ? array[i] > array[i + 1] : array[i] < array[i + 1]) {
+                return false;
             }
         }
-
-        return isCorrect;
+        return true;
     }
 
     public static int[] arrayReverse(int[] array) {
