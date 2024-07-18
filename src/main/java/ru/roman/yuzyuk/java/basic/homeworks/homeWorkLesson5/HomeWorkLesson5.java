@@ -108,7 +108,7 @@ public class HomeWorkLesson5 {
             return false;
         }
         for (int i = 0; i < array.length - 1; i++) {
-            if (direction.equals("ASC") ? array[i] > array[i + 1] : array[i] < array[i + 1]) {
+            if (Objects.equals(direction, "ASC") ? array[i] > array[i + 1] : array[i] < array[i + 1]) {
                 return false;
             }
         }
