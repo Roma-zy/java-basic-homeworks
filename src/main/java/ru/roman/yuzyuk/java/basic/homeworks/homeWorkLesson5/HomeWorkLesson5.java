@@ -1,8 +1,8 @@
-package ru.RomanYuzyuk.java.basic.homeworks.homeWorkLesson5;
+package ru.roman.yuzyuk.java.basic.homeworks.homeWorkLesson5;
 
 import java.util.Objects;
 
-public class homeWorkLesson5 {
+public class HomeWorkLesson5 {
     public static void main(String[] args) {
     }
 
