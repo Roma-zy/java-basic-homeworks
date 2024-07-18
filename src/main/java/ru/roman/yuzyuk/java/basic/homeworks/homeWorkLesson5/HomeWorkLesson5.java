@@ -12,6 +12,17 @@ public class HomeWorkLesson5 {
         }
     }
 
+    public static void printSumNumbersMoreThenFive(int[] array) {
+        int result = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > 5) {
+                result += array[i];
+            }
+        }
+
+        System.out.println(result);
+    }
+
     public static void fillArraySpecifiedNumber(int number, int[] array) {
         for (int i = 0; i < array.length; i++) {
             array[i] = number;
