@@ -91,6 +91,8 @@ public class Box {
 
         this.item = item;
 
+        System.out.println("В коробку положили: " + item);
+
         return this;
     }
 

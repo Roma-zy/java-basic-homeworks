@@ -29,13 +29,14 @@ public class Main {
             System.out.println();
         }
 
-        Color color = new Color("#FFFFFF");
+        Color color = new Color("#FF11AA");
         Box box = new Box(100, 200, 100, color);
 
         box
                 .showInfo()
                 .open()
                 .fill("Бриллиант")
+                .fill("Телефон")
                 .close()
                 .clear()
                 .open()
