@@ -49,7 +49,7 @@ public class Box {
     }
 
     public Box open() {
-        if(isOpened) {
+        if (isOpened) {
             System.out.println("Коробка уже открыта");
             return this;
         }
@@ -60,7 +60,7 @@ public class Box {
     }
 
     public Box close() {
-        if(!isOpened) {
+        if (!isOpened) {
             System.out.println("Коробка уже закрыта");
             return this;
         }
@@ -84,7 +84,7 @@ public class Box {
             return this;
         }
 
-        if(this.item != null) {
+        if (this.item != null) {
             System.out.println("Коробка уже заполнена");
             return this;
         }
@@ -100,7 +100,7 @@ public class Box {
             return this;
         }
 
-        if(this.item == null) {
+        if (this.item == null) {
             System.out.println("Коробка уже пуста");
             return this;
         }
