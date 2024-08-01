@@ -21,9 +21,8 @@ public class Main {
 
 
         final short ageToShowInfo = 40;
-        final int currentYear = Year.now().getValue();
         for (User user : arrUser) {
-            if (currentYear - user.getYearBirth() < ageToShowInfo) continue;
+            if (user.getAge() < ageToShowInfo) continue;
 
             user.showInfo();
             System.out.println();
