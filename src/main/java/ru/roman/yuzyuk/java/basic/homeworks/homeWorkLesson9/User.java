@@ -1,5 +1,7 @@
 package ru.roman.yuzyuk.java.basic.homeworks.homeWorkLesson9;
 
+import java.time.Year;
+
 public class User {
     private String name;
     private String secondName;
@@ -55,6 +57,10 @@ public class User {
         System.out.println("ФИО: " + getFullName());
         System.out.println("Год рождения: " + yearBirth + ";");
         System.out.println("e-mail: " + getEmail());
+    }
+
+    public short getAge() {
+        return (short) (Year.now().getValue() - yearBirth);
     }
 
     private String getFullName() {
