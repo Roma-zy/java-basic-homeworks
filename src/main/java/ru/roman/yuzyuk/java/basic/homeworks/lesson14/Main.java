@@ -1,7 +1,6 @@
 package ru.roman.yuzyuk.java.basic.homeworks.lesson14;
 
 import java.util.ArrayList;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class Main {
