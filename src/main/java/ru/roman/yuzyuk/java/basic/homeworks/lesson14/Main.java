@@ -10,7 +10,7 @@ public class Main {
 
         List<Integer> integers = new ArrayList<>();
         integers.add(1);
-        integers.add(2);
+        integers.add(22);
         integers.add(1);
         integers.add(44);
 
@@ -50,7 +50,17 @@ public class Main {
     }
 
     public static int getSumItemsMoreThenFive(List<Integer> list) {
-        return !list.isEmpty() ? list.stream().reduce((acc, item) -> acc + item).get() : 0;
+        if (list.isEmpty()) {
+            return 0;
+        }
+
+        return list.stream().reduce(0, (acc, item) -> {
+            if (item > 5) {
+                return acc + item;
+            }
+
+            return acc;
+        });
     }
 
     public static void changeAllItems(int value, List<Integer> list) {
