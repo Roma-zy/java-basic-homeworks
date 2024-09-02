@@ -15,7 +15,7 @@ public class Main {
             String serverResponse;
 
             serverResponse = in.readLine();
-            System.out.println("Ответ сервера: " + serverResponse);
+            System.out.println(serverResponse);
 
             while (true) {
                 request = userInput.readLine();
