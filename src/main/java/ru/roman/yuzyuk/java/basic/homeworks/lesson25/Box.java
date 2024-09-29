@@ -1,9 +1,10 @@
 package ru.roman.yuzyuk.java.basic.homeworks.lesson25;
 
 import java.util.ArrayList;
+import java.util.List;
 
 class Box<T extends Fruit> {
-    private ArrayList<T> fruits = new ArrayList<>();
+    private List<T> fruits = new ArrayList<>();
 
     public void addFruit(T fruit) {
         fruits.add(fruit);
