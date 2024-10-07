@@ -1,5 +1,8 @@
 package ru.roman.yuzyuk.java.basic.homeworks.lesson28;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 public class Main {
     private final Object monitor = new Object();
     private int counter = 0;
@@ -7,9 +10,13 @@ public class Main {
     public static void main(String[] args) {
         Main app = new Main();
 
-        new Thread(() -> app.printA()).start();
-        new Thread(() -> app.printB()).start();
-        new Thread(() -> app.printC()).start();
+        ExecutorService executor = Executors.newFixedThreadPool(3);
+
+        executor.submit(() -> app.printA());
+        executor.submit(() -> app.printB());
+        executor.submit(() -> app.printC());
+
+        executor.shutdown();
     }
 
     public void printA() {
